@@ -1,0 +1,4 @@
+# What will be the output
+
+print("10" + "20")          # 1020
+print(10 + 20)              # 30
