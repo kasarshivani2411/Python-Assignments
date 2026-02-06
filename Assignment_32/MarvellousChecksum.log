@@ -1,0 +1,45 @@
+2026-02-06 22:40:07,676 - INFO - ---------------------------------------------------
+2026-02-06 22:40:07,676 - INFO - --------- Marvellous Directory Checksum Automation ---------
+2026-02-06 22:40:07,676 - INFO - ---------------------------------------------------
+2026-02-06 22:40:07,676 - INFO - Calculating checksums for directory: Demo
+2026-02-06 22:40:07,678 - INFO - File: Demo\A.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,678 - INFO - File: Demo\B.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,678 - INFO - File: Demo\C.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,678 - INFO - File: Demo\D.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - File: Demo\Help.exe  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - File: Demo\A.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - File: Demo\B.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - File: Demo\C.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - File: Demo\D.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - File: Demo\Help.exe  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:40:07,679 - INFO - Duplicate files found:
+2026-02-06 22:40:07,680 - INFO - Demo\A.doc, Demo\B.doc, Demo\C.doc, Demo\D.doc, Demo\Help.exe
+2026-02-06 22:40:07,680 - INFO - ---------------------------------------------------
+2026-02-06 22:40:07,680 - INFO - --------- Marvellous Directory Checksum Automation ---------
+2026-02-06 22:40:07,680 - INFO - ---------------------------------------------------
+2026-02-06 22:41:49,394 - INFO - ---------------------------------------------------
+2026-02-06 22:41:49,394 - INFO - --------- Marvellous Directory Checksum Automation ---------
+2026-02-06 22:41:49,394 - INFO - ---------------------------------------------------
+2026-02-06 22:41:49,394 - INFO - Calculating checksums for directory: Demo
+2026-02-06 22:41:49,394 - INFO - Checksums of files in directory 'Demo':
+2026-02-06 22:41:49,395 - INFO - File: Demo\A.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:41:49,395 - INFO - File: Demo\B.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:41:49,395 - INFO - File: Demo\C.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:41:49,395 - INFO - File: Demo\D.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:41:49,395 - INFO - File: Demo\Help.exe  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:41:49,395 - INFO - ---------------------------------------------------
+2026-02-06 22:41:49,395 - INFO - --------- Marvellous Directory Checksum Automation ---------
+2026-02-06 22:41:49,395 - INFO - ---------------------------------------------------
+2026-02-06 22:43:26,480 - INFO - ---------------------------------------------------
+2026-02-06 22:43:26,481 - INFO - --------- Marvellous Directory Checksum Automation ---------
+2026-02-06 22:43:26,481 - INFO - ---------------------------------------------------
+2026-02-06 22:43:26,481 - INFO - Calculating checksums for directory: Demo
+2026-02-06 22:43:26,482 - INFO - Checksums of files in directory 'Demo':
+2026-02-06 22:43:26,482 - INFO - File: Demo\A.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:43:26,482 - INFO - File: Demo\B.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:43:26,482 - INFO - File: Demo\C.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:43:26,482 - INFO - File: Demo\D.doc  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:43:26,482 - INFO - File: Demo\Help.exe  |  Checksum: d41d8cd98f00b204e9800998ecf8427e
+2026-02-06 22:43:26,483 - INFO - ---------------------------------------------------
+2026-02-06 22:43:26,483 - INFO - --------- Marvellous Directory Checksum Automation ---------
+2026-02-06 22:43:26,483 - INFO - ---------------------------------------------------

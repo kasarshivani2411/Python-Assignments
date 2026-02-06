@@ -1,0 +1,7 @@
+Deleted duplicate files:
+Demo\B.doc
+Demo\C.doc
+Demo\D.doc
+Demo\Help.exe
+
+Total duplicate files deleted: 4

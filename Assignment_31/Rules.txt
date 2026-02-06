@@ -1,0 +1,7 @@
+Please follow below rules while designing automation script as
+1. Accept input through command line or through file.
+2. Display any message in log file instead of console.
+3. For separate task define separate function.
+4. For robustness handle every expected exception.
+5. Perform validations before taking any action.
+6. Create user defined modules to store the functionality.
