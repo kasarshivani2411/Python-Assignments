@@ -1,0 +1,1231 @@
+---------------------------------------------------
+----- Marvellous Platform Surveillance System -----
+Log created at : Sun Feb 15 23:11:39 2026
+---------------------------------------------------
+
+---------------------------------------------------
+------------------ System Report ------------------
+---------------------------------------------------
+CPU Usage : 3.1 %
+---------------------------------------------------
+RAM Usage : 91.9 %
+---------------------------------------------------
+
+Disk Usage Report
+C:\ -> 69.7 % used
+D:\ -> 29.3 % used
+---------------------------------------------------
+
+Network Usage Report
+Sent : 54.59 MB
+Recv : 973.64 MB
+---------------------------------------------------
+PID : 0
+PName : System Idle Process
+UserName : NT AUTHORITY\SYSTEM
+Status : running
+CPU % : 1086.00
+Memory % : 0.00
+Thread Count : 36
+Open File count : 0
+---------------------------------------------------
+PID : 4
+PName : System
+UserName : NT AUTHORITY\SYSTEM
+Status : running
+CPU % : 3.30
+Memory % : 0.01
+Thread Count : 293
+Open File count : 0
+---------------------------------------------------
+PID : 396
+PName : RuntimeBroker.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 3
+Open File count : 0
+---------------------------------------------------
+PID : 404
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.19
+Thread Count : 19
+Open File count : 22
+---------------------------------------------------
+PID : 1208
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 7.32
+Thread Count : 17
+Open File count : 20
+---------------------------------------------------
+PID : 1288
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 6.70
+Memory % : 1.21
+Thread Count : 56
+Open File count : 72
+---------------------------------------------------
+PID : 1292
+PName : UserOOBEBroker.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 1
+Open File count : 2
+---------------------------------------------------
+PID : 1916
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.26
+Thread Count : 20
+Open File count : 19
+---------------------------------------------------
+PID : 1992
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.40
+Memory % : 0.31
+Thread Count : 53
+Open File count : 88
+---------------------------------------------------
+PID : 2040
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 7
+Open File count : 1
+---------------------------------------------------
+PID : 2052
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 7
+Open File count : 2
+---------------------------------------------------
+PID : 2104
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 2.62
+Thread Count : 25
+Open File count : 45
+---------------------------------------------------
+PID : 2172
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 8
+Open File count : 20
+---------------------------------------------------
+PID : 2492
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.06
+Thread Count : 10
+Open File count : 15
+---------------------------------------------------
+PID : 2500
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.17
+Thread Count : 18
+Open File count : 16
+---------------------------------------------------
+PID : 2664
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.16
+Thread Count : 31
+Open File count : 9
+---------------------------------------------------
+PID : 2676
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.10
+Thread Count : 21
+Open File count : 5
+---------------------------------------------------
+PID : 2836
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 10
+Open File count : 17
+---------------------------------------------------
+PID : 2920
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.33
+Thread Count : 12
+Open File count : 5
+---------------------------------------------------
+PID : 3096
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.63
+Thread Count : 27
+Open File count : 30
+---------------------------------------------------
+PID : 3212
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.07
+Thread Count : 26
+Open File count : 35
+---------------------------------------------------
+PID : 3248
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 2
+Open File count : 1
+---------------------------------------------------
+PID : 3656
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.20
+Thread Count : 27
+Open File count : 48
+---------------------------------------------------
+PID : 3712
+PName : GlobalPresenter.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.34
+Thread Count : 37
+Open File count : 55
+---------------------------------------------------
+PID : 3780
+PName : cmd.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.00
+Thread Count : 1
+Open File count : 0
+---------------------------------------------------
+PID : 3808
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 1.82
+Thread Count : 45
+Open File count : 183
+---------------------------------------------------
+PID : 4332
+PName : AppActions.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.06
+Thread Count : 7
+Open File count : 0
+---------------------------------------------------
+PID : 5104
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 2.45
+Thread Count : 23
+Open File count : 54
+---------------------------------------------------
+PID : 5252
+PName : WhatsApp.Root.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 2.78
+Thread Count : 48
+Open File count : 156
+---------------------------------------------------
+PID : 5380
+PName : mc-extn-browserhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 37
+Open File count : 2
+---------------------------------------------------
+PID : 5728
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 1.30
+Thread Count : 22
+Open File count : 3
+---------------------------------------------------
+PID : 6108
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.09
+Thread Count : 21
+Open File count : 18
+---------------------------------------------------
+PID : 6180
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 19
+Open File count : 22
+---------------------------------------------------
+PID : 6584
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 3.51
+Thread Count : 28
+Open File count : 28
+---------------------------------------------------
+PID : 6592
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.33
+Thread Count : 24
+Open File count : 7
+---------------------------------------------------
+PID : 6616
+PName : RuntimeBroker.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.11
+Thread Count : 28
+Open File count : 5
+---------------------------------------------------
+PID : 7104
+PName : ipf_helper.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.02
+Thread Count : 4
+Open File count : 0
+---------------------------------------------------
+PID : 7184
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.30
+Thread Count : 24
+Open File count : 9
+---------------------------------------------------
+PID : 7340
+PName : pet.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 1
+Open File count : 3
+---------------------------------------------------
+PID : 7524
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 8
+Open File count : 20
+---------------------------------------------------
+PID : 8048
+PName : uihost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.15
+Thread Count : 65
+Open File count : 1
+---------------------------------------------------
+PID : 8156
+PName : cmd.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.00
+Thread Count : 1
+Open File count : 0
+---------------------------------------------------
+PID : 8176
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.06
+Thread Count : 18
+Open File count : 33
+---------------------------------------------------
+PID : 8320
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 3
+Open File count : 4
+---------------------------------------------------
+PID : 8796
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 3
+Open File count : 6
+---------------------------------------------------
+PID : 9188
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.38
+Thread Count : 13
+Open File count : 9
+---------------------------------------------------
+PID : 9300
+PName : WidgetService.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 5
+Open File count : 9
+---------------------------------------------------
+PID : 9532
+PName : explorer.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.40
+Memory % : 1.74
+Thread Count : 101
+Open File count : 78
+---------------------------------------------------
+PID : 9604
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.18
+Thread Count : 25
+Open File count : 8
+---------------------------------------------------
+PID : 9640
+PName : RuntimeBroker.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 4
+Open File count : 2
+---------------------------------------------------
+PID : 10272
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 2.41
+Thread Count : 25
+Open File count : 60
+---------------------------------------------------
+PID : 10296
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 19
+Open File count : 22
+---------------------------------------------------
+PID : 10316
+PName : unsecapp.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 3
+Open File count : 0
+---------------------------------------------------
+PID : 10356
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 20
+Open File count : 26
+---------------------------------------------------
+PID : 10464
+PName : RuntimeBroker.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.12
+Thread Count : 16
+Open File count : 10
+---------------------------------------------------
+PID : 10468
+PName : sihost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.16
+Thread Count : 11
+Open File count : 2
+---------------------------------------------------
+PID : 10528
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.10
+Thread Count : 7
+Open File count : 7
+---------------------------------------------------
+PID : 10576
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 2
+Open File count : 1
+---------------------------------------------------
+PID : 10652
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.18
+Thread Count : 6
+Open File count : 8
+---------------------------------------------------
+PID : 10712
+PName : taskhostw.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.13
+Thread Count : 7
+Open File count : 8
+---------------------------------------------------
+PID : 10956
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.07
+Thread Count : 3
+Open File count : 1
+---------------------------------------------------
+PID : 11096
+PName : RtkAudUService64.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 8
+Open File count : 1
+---------------------------------------------------
+PID : 11220
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 1.18
+Thread Count : 23
+Open File count : 28
+---------------------------------------------------
+PID : 11364
+PName : CrossDeviceResume.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.05
+Thread Count : 6
+Open File count : 6
+---------------------------------------------------
+PID : 11424
+PName : Widgets.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.43
+Thread Count : 12
+Open File count : 15
+---------------------------------------------------
+PID : 11520
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.22
+Thread Count : 11
+Open File count : 9
+---------------------------------------------------
+PID : 11764
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 2
+Open File count : 1
+---------------------------------------------------
+PID : 11964
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 3
+Open File count : 2
+---------------------------------------------------
+PID : 12164
+PName : StartMenuExperienceHost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.24
+Thread Count : 18
+Open File count : 22
+---------------------------------------------------
+PID : 12172
+PName : SearchHost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.14
+Thread Count : 13
+Open File count : 25
+---------------------------------------------------
+PID : 12388
+PName : LockApp.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : stopped
+CPU % : 0.00
+Memory % : 0.00
+Thread Count : 15
+Open File count : 12
+---------------------------------------------------
+PID : 12408
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 8
+Open File count : 1
+---------------------------------------------------
+PID : 12600
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.08
+Thread Count : 11
+Open File count : 23
+---------------------------------------------------
+PID : 12616
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 4
+Open File count : 1
+---------------------------------------------------
+PID : 12668
+PName : FnHotkeyUtility.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.05
+Thread Count : 9
+Open File count : 0
+---------------------------------------------------
+PID : 12716
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.21
+Thread Count : 19
+Open File count : 22
+---------------------------------------------------
+PID : 12916
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.10
+Thread Count : 21
+Open File count : 5
+---------------------------------------------------
+PID : 12948
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.10
+Thread Count : 22
+Open File count : 19
+---------------------------------------------------
+PID : 13016
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.31
+Thread Count : 52
+Open File count : 99
+---------------------------------------------------
+PID : 13040
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 1.10
+Memory % : 4.39
+Thread Count : 25
+Open File count : 55
+---------------------------------------------------
+PID : 13228
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 7
+Open File count : 1
+---------------------------------------------------
+PID : 13648
+PName : pet.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.00
+Thread Count : 1
+Open File count : 13
+---------------------------------------------------
+PID : 14512
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.29
+Thread Count : 23
+Open File count : 22
+---------------------------------------------------
+PID : 14528
+PName : SecurityHealthSystray.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 1
+Open File count : 1
+---------------------------------------------------
+PID : 14584
+PName : powershell.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.07
+Thread Count : 9
+Open File count : 8
+---------------------------------------------------
+PID : 14692
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 2
+Open File count : 1
+---------------------------------------------------
+PID : 14744
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 1.00
+Memory % : 1.43
+Thread Count : 21
+Open File count : 5
+---------------------------------------------------
+PID : 14768
+PName : cmd.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.03
+Thread Count : 1
+Open File count : 1
+---------------------------------------------------
+PID : 14904
+PName : svchost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.08
+Thread Count : 4
+Open File count : 7
+---------------------------------------------------
+PID : 15032
+PName : powershell.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.07
+Thread Count : 9
+Open File count : 8
+---------------------------------------------------
+PID : 15056
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.21
+Thread Count : 19
+Open File count : 22
+---------------------------------------------------
+PID : 15060
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 8
+Open File count : 19
+---------------------------------------------------
+PID : 15076
+PName : dllhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 2
+Open File count : 1
+---------------------------------------------------
+PID : 15140
+PName : MessagingPlugin.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 0.05
+Thread Count : 14
+Open File count : 9
+---------------------------------------------------
+PID : 15212
+PName : TextInputHost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.31
+Thread Count : 38
+Open File count : 32
+---------------------------------------------------
+PID : 15732
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 5
+Open File count : 1
+---------------------------------------------------
+PID : 15940
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 1.10
+Memory % : 0.78
+Thread Count : 51
+Open File count : 175
+---------------------------------------------------
+PID : 16032
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.30
+Memory % : 0.15
+Thread Count : 27
+Open File count : 8
+---------------------------------------------------
+PID : 16076
+PName : QSHelper.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 3
+Open File count : 3
+---------------------------------------------------
+PID : 16136
+PName : WindowsTerminal.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.40
+Memory % : 0.48
+Thread Count : 13
+Open File count : 11
+---------------------------------------------------
+PID : 16148
+PName : OpenConsole.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 3.40
+Memory % : 0.03
+Thread Count : 6
+Open File count : 0
+---------------------------------------------------
+PID : 16168
+PName : OneDrive.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.53
+Thread Count : 26
+Open File count : 32
+---------------------------------------------------
+PID : 16196
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 5
+Open File count : 1
+---------------------------------------------------
+PID : 16288
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 5
+Open File count : 1
+---------------------------------------------------
+PID : 16360
+PName : powershell.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.07
+Thread Count : 9
+Open File count : 8
+---------------------------------------------------
+PID : 16436
+PName : ShellHost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.06
+Thread Count : 7
+Open File count : 5
+---------------------------------------------------
+PID : 16532
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.10
+Memory % : 1.73
+Thread Count : 24
+Open File count : 59
+---------------------------------------------------
+PID : 16564
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.12
+Thread Count : 14
+Open File count : 3
+---------------------------------------------------
+PID : 16732
+PName : notepad++.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 5
+Open File count : 6
+---------------------------------------------------
+PID : 17052
+PName : ShellExperienceHost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : stopped
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 22
+Open File count : 9
+---------------------------------------------------
+PID : 17168
+PName : Code.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 5.43
+Thread Count : 17
+Open File count : 15
+---------------------------------------------------
+PID : 17660
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.55
+Thread Count : 19
+Open File count : 21
+---------------------------------------------------
+PID : 17764
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 17
+Open File count : 22
+---------------------------------------------------
+PID : 17996
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 3
+Open File count : 4
+---------------------------------------------------
+PID : 18016
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.40
+Memory % : 3.83
+Thread Count : 30
+Open File count : 35
+---------------------------------------------------
+PID : 18204
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 20
+Open File count : 119
+---------------------------------------------------
+PID : 18564
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.30
+Thread Count : 26
+Open File count : 35
+---------------------------------------------------
+PID : 18748
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 17
+Open File count : 22
+---------------------------------------------------
+PID : 18768
+PName : powershell.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.00
+Thread Count : 1
+Open File count : 0
+---------------------------------------------------
+PID : 19124
+PName : conhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.01
+Thread Count : 2
+Open File count : 1
+---------------------------------------------------
+PID : 19356
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 7
+Open File count : 1
+---------------------------------------------------
+PID : 19372
+PName : mc-web-view.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 14
+Open File count : 2
+---------------------------------------------------
+PID : 19424
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.04
+Thread Count : 9
+Open File count : 12
+---------------------------------------------------
+PID : 19580
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.27
+Thread Count : 22
+Open File count : 22
+---------------------------------------------------
+PID : 19744
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.19
+Thread Count : 20
+Open File count : 22
+---------------------------------------------------
+PID : 19884
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.33
+Thread Count : 27
+Open File count : 22
+---------------------------------------------------
+PID : 20100
+PName : msedgewebview2.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.05
+Thread Count : 10
+Open File count : 6
+---------------------------------------------------
+PID : 20260
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.22
+Thread Count : 12
+Open File count : 9
+---------------------------------------------------
+PID : 20268
+PName : browserhost.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.02
+Thread Count : 38
+Open File count : 0
+---------------------------------------------------
+PID : 20428
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.18
+Thread Count : 23
+Open File count : 38
+---------------------------------------------------
+PID : 20472
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.06
+Thread Count : 12
+Open File count : 7
+---------------------------------------------------
+PID : 20504
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.28
+Thread Count : 20
+Open File count : 22
+---------------------------------------------------
+PID : 20536
+PName : python.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 89.10
+Memory % : 0.30
+Thread Count : 4
+Open File count : 2
+---------------------------------------------------
+PID : 20560
+PName : chrome.exe
+UserName : LAPTOP-QD380NVR\Shivani
+Status : running
+CPU % : 0.00
+Memory % : 0.20
+Thread Count : 18
+Open File count : 22
+---------------------------------------------------
+---------------------------------------------------
+----------------- End of Log File -----------------
+---------------------------------------------------

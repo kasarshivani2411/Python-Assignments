@@ -1,0 +1,108 @@
+---------------------------------------------------
+----- Marvellous Platform Surveillance System -----
+Log created at : Sun Feb 15 23:37:49 2026
+---------------------------------------------------
+
+---------------------------------------------------
+------------------ System Report ------------------
+---------------------------------------------------
+CPU Usage : 8.7 %
+---------------------------------------------------
+RAM Usage : 90.6 %
+---------------------------------------------------
+
+Disk Usage Report
+C:\ -> 69.7 % used
+D:\ -> 29.3 % used
+---------------------------------------------------
+
+Network Usage Report
+Sent : 58.54 MB
+Recv : 977.18 MB
+---------------------------------------------------
+
+Top 10 Memory Consuming Processes
+---------------------------------------------------
+Process Name : Code.exe
+PID : 1208
+CPU % : 0.00
+Memory (RSS) : 768.31 MB
+Thread Count : 17
+Open File count : 20
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : Code.exe
+PID : 17168
+CPU % : 0.00
+Memory (RSS) : 420.84 MB
+Thread Count : 17
+Open File count : 15
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : Code.exe
+PID : 13040
+CPU % : 0.90
+Memory (RSS) : 341.44 MB
+Thread Count : 25
+Open File count : 56
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : chrome.exe
+PID : 20428
+CPU % : 0.00
+Memory (RSS) : 315.02 MB
+Thread Count : 24
+Open File count : 48
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : msedgewebview2.exe
+PID : 18016
+CPU % : 10.10
+Memory (RSS) : 288.82 MB
+Thread Count : 30
+Open File count : 35
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : Code.exe
+PID : 6584
+CPU % : 0.10
+Memory (RSS) : 271.38 MB
+Thread Count : 28
+Open File count : 28
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : chrome.exe
+PID : 10272
+CPU % : 0.00
+Memory (RSS) : 197.23 MB
+Thread Count : 26
+Open File count : 60
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : Code.exe
+PID : 5104
+CPU % : 0.00
+Memory (RSS) : 189.27 MB
+Thread Count : 23
+Open File count : 54
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : MsMpEng.exe
+PID : 4880
+CPU % : 0.80
+Memory (RSS) : 157.45 MB
+Thread Count : 54
+Open File count : Access Denied
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+Process Name : chrome.exe
+PID : 3808
+CPU % : 0.70
+Memory (RSS) : 157.12 MB
+Thread Count : 44
+Open File count : 183
+Log created at : Sun Feb 15 23:38:31 2026
+---------------------------------------------------
+---------------------------------------------------
+----------------- End of Log File -----------------
+---------------------------------------------------
