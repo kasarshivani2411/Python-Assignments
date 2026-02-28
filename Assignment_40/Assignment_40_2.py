@@ -4,6 +4,11 @@
 #     2) Which feature contributes the most in predicting FinalResult?
 #     3) Which feature contributes the least?
 
+# 2. Remove the column SleepHours from the dataset.
+#     1) Train the model again.
+#     2) Compare new accuracy with previous accuracy.
+#     3) Does removing this feature affect performance?
+
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -307,3 +312,54 @@ plt.show()
 
 # Least Important Feature:
 # SleepHours (Score: 0.05)
+
+
+###########################################################################################
+# Remove SleepHours and Retrain Model
+###########################################################################################
+
+print(Border)
+print("Remove SleepHours and Retrain Model")
+print(Border)
+
+# Remove SleepHours from feature list
+feature_cols_new = ["StudyHours", "Attendance", "PreviousScore", "AssignmentsCompleted"]
+
+X_new = df[feature_cols_new]
+Y_new = df["FinalResult"]
+
+# Split again
+X_train_new, X_test_new, Y_train_new, Y_test_new = train_test_split(
+    X_new,
+    Y_new,
+    test_size=0.2,
+    random_state=42
+)
+
+# Create new model
+model_new = DecisionTreeClassifier(
+    criterion="gini",
+    max_depth=None,
+    random_state=42
+)
+
+# Train new model
+model_new.fit(X_train_new, Y_train_new)
+
+# Predict
+Y_pred_new = model_new.predict(X_test_new)
+
+# Calculate new accuracy
+new_accuracy = accuracy_score(Y_test_new, Y_pred_new)
+
+print(f"Previous Testing Accuracy : {test_accuracy*100:.2f}%")
+print(f"New Testing Accuracy      : {new_accuracy*100:.2f}%")
+
+# Compare Performance
+print("\nPerformance Comparison:")
+if abs(test_accuracy - new_accuracy) < 0.02:
+    print("Removing SleepHours does NOT significantly affect performance.")
+elif new_accuracy > test_accuracy:
+    print("Performance improved after removing SleepHours.")
+else:
+    print("Performance decreased after removing SleepHours.")

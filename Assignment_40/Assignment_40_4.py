@@ -4,6 +4,22 @@
 #     2) Which feature contributes the most in predicting FinalResult?
 #     3) Which feature contributes the least?
 
+# 2. Remove the column SleepHours from the dataset.
+#     1) Train the model again.
+#     2) Compare new accuracy with previous accuracy.
+#     3) Does removing this feature affect performance?
+
+# 3. Train the model using only:
+#     1) StudyHours
+#     2) Attendance
+
+# Compare the accuracy with the full-feature model.
+# Is the model still performing well?
+
+# 4. Create a new DataFrame with details of 5 new students.
+# Use the trained model to predict their results.
+# Displat predictions clearly.
+
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -251,59 +267,37 @@ elif test_accuracy > train_accuracy + 0.05:
 else:
     print("The model has balanced performance: no significant overfitting or underfitting detected.")
 
-
 ###########################################################################################
-# Step 10 : Feature Importance
+# Predict Results for 5 New Students
 ###########################################################################################
 
 print(Border)
-print("Step 10 : Feature Importance")
+print("Predict Results for 5 New Students")
 print(Border)
 
-# Get feature importance scores
-importances = model.feature_importances_
-
-# Create DataFrame for better visualization
-feature_importance_df = pd.DataFrame({
-    "Feature": feature_cols,
-    "Importance Score": importances
+# new students DataFrame
+new_students = pd.DataFrame({
+    "StudyHours": [2.5, 6.0, 4.0, 8.0, 3.0],
+    "Attendance": [68, 85, 75, 95, 70],
+    "PreviousScore": [48, 70, 55, 82, 50],
+    "SleepHours": [6, 7, 6, 8, 5],
+    "AssignmentsCompleted": [3, 8, 5, 9, 4]
 })
 
-# Sort values in descending order
-feature_importance_df = feature_importance_df.sort_values(
-    by="Importance Score",
-    ascending=False
-)
+print("New Students Data:")
+print(new_students)
 
-print("Feature Importance Scores:")
-print(feature_importance_df)
+# Predict using trained model
+new_predictions = model.predict(new_students)
 
-# Identify most and least important features
-most_important = feature_importance_df.iloc[0]
-least_important = feature_importance_df.iloc[-1]
+# Add predictions to DataFrame
+new_students["PredictedFinalResult"] = new_predictions
 
-print("\nMost Important Feature:")
-print(f"{most_important['Feature']} "
-      f"(Score: {most_important['Importance Score']:.4f})")
+new_students["PredictedResultLabel"] = new_students["PredictedFinalResult"].map({
+    0: "Fail",
+    1: "Pass"
+})
 
-print("\nLeast Important Feature:")
-print(f"{least_important['Feature']} "
-      f"(Score: {least_important['Importance Score']:.4f})")
-
-# Optional: Plot Feature Importance
-plt.figure(figsize=(8,5))
-plt.barh(feature_importance_df["Feature"], 
-         feature_importance_df["Importance Score"])
-plt.xlabel("Importance Score")
-plt.ylabel("Features")
-plt.title("Feature Importance in Decision Tree Model")
-plt.gca().invert_yaxis()
-plt.grid(True)
-plt.show()
-
-
-# Most Important Feature:
-# PreviousScore (Score: 0.41)
-
-# Least Important Feature:
-# SleepHours (Score: 0.05)
+# Display final results
+print("\nPrediction Results for New Students:")
+print(new_students)

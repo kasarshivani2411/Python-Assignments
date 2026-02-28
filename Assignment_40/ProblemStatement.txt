@@ -41,7 +41,7 @@ Is the model still performing well?
 
 4. Create a new DataFrame with details of 5 new students.
 Use the trained model to predict their results.
-Displat predictions clearly.
+Display predictions clearly.
 
 5. Without using accuracy_score, manually calculate accuracy:
 Verify whether it matches sklearn accuracy.

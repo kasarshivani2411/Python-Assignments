@@ -4,6 +4,31 @@
 #     2) Which feature contributes the most in predicting FinalResult?
 #     3) Which feature contributes the least?
 
+# 2. Remove the column SleepHours from the dataset.
+#     1) Train the model again.
+#     2) Compare new accuracy with previous accuracy.
+#     3) Does removing this feature affect performance?
+
+# 3. Train the model using only:
+#     1) StudyHours
+#     2) Attendance
+
+# Compare the accuracy with the full-feature model.
+# Is the model still performing well?
+
+# 4. Create a new DataFrame with details of 5 new students.
+# Use the trained model to predict their results.
+# Displat predictions clearly.
+
+# 5. Without using accuracy_score, manually calculate accuracy:
+# Verify whether it matches sklearn accuracy.
+
+# 6. Identify students where:
+# Y_test != Y_pred
+#     1) Display those rows.
+#     2) How many students were misclassified?
+#     3) What common pattern do you observe?
+
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -251,59 +276,67 @@ elif test_accuracy > train_accuracy + 0.05:
 else:
     print("The model has balanced performance: no significant overfitting or underfitting detected.")
 
-
 ###########################################################################################
-# Step 10 : Feature Importance
+# Manual Accuracy Calculation
 ###########################################################################################
 
 print(Border)
-print("Step 10 : Feature Importance")
+print("Manual Accuracy Calculation")
 print(Border)
 
-# Get feature importance scores
-importances = model.feature_importances_
+# Count correct predictions
+correct_predictions = (Y_test.values == Y_pred).sum()
 
-# Create DataFrame for better visualization
-feature_importance_df = pd.DataFrame({
-    "Feature": feature_cols,
-    "Importance Score": importances
+# Total predictions
+total_predictions = len(Y_test)
+
+# Manual accuracy formula
+manual_accuracy = correct_predictions / total_predictions
+
+print(f"Correct Predictions : {correct_predictions}")
+print(f"Total Predictions   : {total_predictions}")
+print(f"Manual Accuracy     : {manual_accuracy*100:.2f}%")
+
+# Compare with sklearn accuracy
+print(f"Sklearn Accuracy    : {accuracy*100:.2f}%")
+
+# Verification
+if abs(manual_accuracy - accuracy) < 1e-6:
+    print("Manual accuracy matches sklearn accuracy.")
+else:
+    print("Manual accuracy does NOT match sklearn accuracy.")
+
+# Manual accuracy matches sklearn accuracy.
+
+###########################################################################################
+# Identify Misclassified Students
+###########################################################################################
+
+print(Border)
+print("Identify Misclassified Students")
+print(Border)
+
+# Create comparison DataFrame
+comparison_df = pd.DataFrame({
+    "StudyHours": X_test["StudyHours"].values,
+    "Attendance": X_test["Attendance"].values,
+    "PreviousScore": X_test["PreviousScore"].values,
+    "SleepHours": X_test["SleepHours"].values,
+    "AssignmentsCompleted": X_test["AssignmentsCompleted"].values,
+    "Actual": Y_test.values,
+    "Predicted": Y_pred
 })
 
-# Sort values in descending order
-feature_importance_df = feature_importance_df.sort_values(
-    by="Importance Score",
-    ascending=False
-)
+# Filter misclassified rows
+misclassified = comparison_df[comparison_df["Actual"] != comparison_df["Predicted"]]
 
-print("Feature Importance Scores:")
-print(feature_importance_df)
+print("Misclassified Students:")
+print(misclassified)
 
-# Identify most and least important features
-most_important = feature_importance_df.iloc[0]
-least_important = feature_importance_df.iloc[-1]
+# Count misclassified students
+num_misclassified = len(misclassified)
+print(f"\nNumber of Misclassified Students: {num_misclassified}")
 
-print("\nMost Important Feature:")
-print(f"{most_important['Feature']} "
-      f"(Score: {most_important['Importance Score']:.4f})")
-
-print("\nLeast Important Feature:")
-print(f"{least_important['Feature']} "
-      f"(Score: {least_important['Importance Score']:.4f})")
-
-# Optional: Plot Feature Importance
-plt.figure(figsize=(8,5))
-plt.barh(feature_importance_df["Feature"], 
-         feature_importance_df["Importance Score"])
-plt.xlabel("Importance Score")
-plt.ylabel("Features")
-plt.title("Feature Importance in Decision Tree Model")
-plt.gca().invert_yaxis()
-plt.grid(True)
-plt.show()
-
-
-# Most Important Feature:
-# PreviousScore (Score: 0.41)
-
-# Least Important Feature:
-# SleepHours (Score: 0.05)
+# Percentage of misclassification
+misclassification_rate = (num_misclassified / len(Y_test)) * 100
+print(f"Misclassification Rate: {misclassification_rate:.2f}%")

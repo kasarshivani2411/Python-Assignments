@@ -4,6 +4,52 @@
 #     2) Which feature contributes the most in predicting FinalResult?
 #     3) Which feature contributes the least?
 
+# 2. Remove the column SleepHours from the dataset.
+#     1) Train the model again.
+#     2) Compare new accuracy with previous accuracy.
+#     3) Does removing this feature affect performance?
+
+# 3. Train the model using only:
+#     1) StudyHours
+#     2) Attendance
+
+# Compare the accuracy with the full-feature model.
+# Is the model still performing well?
+
+# 4. Create a new DataFrame with details of 5 new students.
+# Use the trained model to predict their results.
+# Displat predictions clearly.
+
+# 5. Without using accuracy_score, manually calculate accuracy:
+# Verify whether it matches sklearn accuracy.
+
+# 6. Identify students where:
+# Y_test != Y_pred
+#     1) Display those rows.
+#     2) How many students were misclassified?
+#     3) What common pattern do you observe?
+
+# 7. Train model using:
+#     1) random_state = 0
+#     2) random_state = 10
+#     3) random_state = 42
+
+# Compare testing accuracy.
+# Does the result change?
+
+# 8. Decision Tree Visualization
+# Use:
+# from sklearn.tree import plot_tree
+# Visualize the trained decision tree.
+#     1) Which feature appears at the root node?
+#     2) Why do you think that feature was selected first?
+
+# 9. Create a new column:
+# PerformanceIndex = (StudyHours * 2) + Attendance
+
+# Train the model including this new feature.
+# Does accuracy improve?
+
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -118,6 +164,8 @@ X_train, X_test, Y_train, Y_test = train_test_split(
     Y,
     test_size= 0.2,
     random_state= 42
+    # random_state = 0
+    # random_state = 10
 )
 
 print("Data splitting activity done : ")
@@ -146,6 +194,8 @@ model = DecisionTreeClassifier(
     # max_depth= 3,
     max_depth= None,
     random_state= 42
+    # random_state = 0
+    # random_state = 10
 )
 
 print("Model successfully created :", model)
@@ -251,59 +301,181 @@ elif test_accuracy > train_accuracy + 0.05:
 else:
     print("The model has balanced performance: no significant overfitting or underfitting detected.")
 
-
 ###########################################################################################
-# Step 10 : Feature Importance
+# Manual Accuracy Calculation
 ###########################################################################################
 
 print(Border)
-print("Step 10 : Feature Importance")
+print("Manual Accuracy Calculation")
 print(Border)
 
-# Get feature importance scores
-importances = model.feature_importances_
+# Count correct predictions
+correct_predictions = (Y_test.values == Y_pred).sum()
 
-# Create DataFrame for better visualization
-feature_importance_df = pd.DataFrame({
-    "Feature": feature_cols,
-    "Importance Score": importances
+# Total predictions
+total_predictions = len(Y_test)
+
+# Manual accuracy formula
+manual_accuracy = correct_predictions / total_predictions
+
+print(f"Correct Predictions : {correct_predictions}")
+print(f"Total Predictions   : {total_predictions}")
+print(f"Manual Accuracy     : {manual_accuracy*100:.2f}%")
+
+# Compare with sklearn accuracy
+print(f"Sklearn Accuracy    : {accuracy*100:.2f}%")
+
+# Verification
+if abs(manual_accuracy - accuracy) < 1e-6:
+    print("Manual accuracy matches sklearn accuracy.")
+else:
+    print("Manual accuracy does NOT match sklearn accuracy.")
+
+# Manual accuracy matches sklearn accuracy.
+
+###########################################################################################
+# Identify Misclassified Students
+###########################################################################################
+
+print(Border)
+print("Identify Misclassified Students")
+print(Border)
+
+# Create comparison DataFrame
+comparison_df = pd.DataFrame({
+    "StudyHours": X_test["StudyHours"].values,
+    "Attendance": X_test["Attendance"].values,
+    "PreviousScore": X_test["PreviousScore"].values,
+    "SleepHours": X_test["SleepHours"].values,
+    "AssignmentsCompleted": X_test["AssignmentsCompleted"].values,
+    "Actual": Y_test.values,
+    "Predicted": Y_pred
 })
 
-# Sort values in descending order
-feature_importance_df = feature_importance_df.sort_values(
-    by="Importance Score",
-    ascending=False
+# Filter misclassified rows
+misclassified = comparison_df[comparison_df["Actual"] != comparison_df["Predicted"]]
+
+print("Misclassified Students:")
+print(misclassified)
+
+# Count misclassified students
+num_misclassified = len(misclassified)
+print(f"\nNumber of Misclassified Students: {num_misclassified}")
+
+# Percentage of misclassification
+misclassification_rate = (num_misclassified / len(Y_test)) * 100
+print(f"Misclassification Rate: {misclassification_rate:.2f}%")
+
+# Yes. The testing accuracy changes depending on random_state
+
+###########################################################################################
+# Decision Tree Visualization
+###########################################################################################
+
+print(Border)
+print("Decision Tree Visualization")
+print(Border)
+
+from sklearn.tree import plot_tree
+
+plt.figure(figsize=(18,10))
+
+plot_tree(
+    model,
+    feature_names=feature_cols,
+    class_names=["Fail (0)", "Pass (1)"],
+    filled=True,
+    rounded=True,
+    fontsize=10
 )
 
-print("Feature Importance Scores:")
-print(feature_importance_df)
-
-# Identify most and least important features
-most_important = feature_importance_df.iloc[0]
-least_important = feature_importance_df.iloc[-1]
-
-print("\nMost Important Feature:")
-print(f"{most_important['Feature']} "
-      f"(Score: {most_important['Importance Score']:.4f})")
-
-print("\nLeast Important Feature:")
-print(f"{least_important['Feature']} "
-      f"(Score: {least_important['Importance Score']:.4f})")
-
-# Optional: Plot Feature Importance
-plt.figure(figsize=(8,5))
-plt.barh(feature_importance_df["Feature"], 
-         feature_importance_df["Importance Score"])
-plt.xlabel("Importance Score")
-plt.ylabel("Features")
-plt.title("Feature Importance in Decision Tree Model")
-plt.gca().invert_yaxis()
-plt.grid(True)
+plt.title("Decision Tree Visualization")
 plt.show()
 
+# 1) Which feature appears at the root node?
+# Attendance is the root node feature.
 
-# Most Important Feature:
-# PreviousScore (Score: 0.41)
+# 2) Why do you think that feature was selected first?
+# Because splitting on Attendance at 75.5 produces the highest reduction in impurity (Gini impurity). 
+# It best separates the students into Fail and Pass classes with very pure leaf nodes (Gini = 0.0 in children), 
+# making it the most informative first split for this dataset.
 
-# Least Important Feature:
-# SleepHours (Score: 0.05)
+# 9
+
+###########################################################################################
+# New feature PerformanceIndex
+###########################################################################################
+
+print(Border)
+print("Adding new feature PerformanceIndex")
+print(Border)
+
+# Create PerformanceIndex = (StudyHours * 2) + Attendance
+df["PerformanceIndex"] = (df["StudyHours"] * 2) + df["Attendance"]
+
+# Define new feature columns including PerformanceIndex
+new_feature_cols = feature_cols + ["PerformanceIndex"]
+
+# Prepare new X and Y
+X_new = df[new_feature_cols]
+Y_new = df["FinalResult"]
+
+print("New feature columns:", new_feature_cols)
+
+###########################################################################################
+# Split data with new feature and retrain model
+###########################################################################################
+
+print(Border)
+print("Split data and train model with new feature")
+print(Border)
+
+X_train_new, X_test_new, Y_train_new, Y_test_new = train_test_split(
+    X_new,
+    Y_new,
+    test_size=0.2,
+    random_state=42
+)
+
+model_new = DecisionTreeClassifier(
+    criterion="gini",
+    max_depth=None,
+    random_state=42
+)
+
+model_new.fit(X_train_new, Y_train_new)
+
+print("Model retrained with new feature PerformanceIndex")
+
+###########################################################################################
+# Prediction and Accuracy Calculation with new feature
+###########################################################################################
+
+print(Border)
+print("Prediction and accuracy with new feature")
+print(Border)
+
+Y_pred_new = model_new.predict(X_test_new)
+
+accuracy_new = accuracy_score(Y_test_new, Y_pred_new)
+print(f"Accuracy with new feature PerformanceIndex: {accuracy_new*100:.2f}%")
+
+###########################################################################################
+# Compare old and new accuracy
+###########################################################################################
+
+print(Border)
+print("Compare Accuracy")
+print(Border)
+
+print(f"Old accuracy: {accuracy*100:.2f}%")
+print(f"New accuracy: {accuracy_new*100:.2f}%")
+
+if accuracy_new > accuracy:
+    print("Accuracy improved after adding PerformanceIndex.")
+elif accuracy_new < accuracy:
+    print("Accuracy decreased after adding PerformanceIndex.")
+else:
+    print("Accuracy remained the same after adding PerformanceIndex.")
+
+# Accuracy remained the same after adding PerformanceIndex.

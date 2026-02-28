@@ -4,6 +4,18 @@
 #     2) Which feature contributes the most in predicting FinalResult?
 #     3) Which feature contributes the least?
 
+# 2. Remove the column SleepHours from the dataset.
+#     1) Train the model again.
+#     2) Compare new accuracy with previous accuracy.
+#     3) Does removing this feature affect performance?
+
+# 3. Train the model using only:
+#     1) StudyHours
+#     2) Attendance
+
+# Compare the accuracy with the full-feature model.
+# Is the model still performing well?
+
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -251,59 +263,54 @@ elif test_accuracy > train_accuracy + 0.05:
 else:
     print("The model has balanced performance: no significant overfitting or underfitting detected.")
 
-
 ###########################################################################################
-# Step 10 : Feature Importance
+# Train Model Using Only StudyHours and Attendance
 ###########################################################################################
 
 print(Border)
-print("Step 10 : Feature Importance")
+print("Train Model Using Only StudyHours and Attendance")
 print(Border)
 
-# Get feature importance scores
-importances = model.feature_importances_
+feature_cols_two = ["StudyHours", "Attendance"]
 
-# Create DataFrame for better visualization
-feature_importance_df = pd.DataFrame({
-    "Feature": feature_cols,
-    "Importance Score": importances
-})
+X_two = df[feature_cols_two]
+Y_two = df["FinalResult"]
 
-# Sort values in descending order
-feature_importance_df = feature_importance_df.sort_values(
-    by="Importance Score",
-    ascending=False
+# Split dataset
+X_train_two, X_test_two, Y_train_two, Y_test_two = train_test_split(
+    X_two,
+    Y_two,
+    test_size=0.2,
+    random_state=42
 )
 
-print("Feature Importance Scores:")
-print(feature_importance_df)
+# Create new model
+model_two = DecisionTreeClassifier(
+    criterion="gini",
+    max_depth=None,
+    random_state=42
+)
 
-# Identify most and least important features
-most_important = feature_importance_df.iloc[0]
-least_important = feature_importance_df.iloc[-1]
+# Train the model
+model_two.fit(X_train_two, Y_train_two)
 
-print("\nMost Important Feature:")
-print(f"{most_important['Feature']} "
-      f"(Score: {most_important['Importance Score']:.4f})")
+# Test the model
+Y_pred_two = model_two.predict(X_test_two)
 
-print("\nLeast Important Feature:")
-print(f"{least_important['Feature']} "
-      f"(Score: {least_important['Importance Score']:.4f})")
+# Accuracy calculation
+accuracy_two = accuracy_score(Y_test_two, Y_pred_two)
 
-# Optional: Plot Feature Importance
-plt.figure(figsize=(8,5))
-plt.barh(feature_importance_df["Feature"], 
-         feature_importance_df["Importance Score"])
-plt.xlabel("Importance Score")
-plt.ylabel("Features")
-plt.title("Feature Importance in Decision Tree Model")
-plt.gca().invert_yaxis()
-plt.grid(True)
-plt.show()
+print(f"Previous Testing Accuracy (All Features) : {test_accuracy*100:.2f}%")
+print(f"Testing Accuracy (Only 2 Features)       : {accuracy_two*100:.2f}%")
 
+# Compare performance
+print("\nPerformance Comparison:")
+if accuracy_two < test_accuracy:
+    print("Accuracy decreased when using only StudyHours and Attendance.")
+elif accuracy_two > test_accuracy:
+    print("Accuracy improved when using only StudyHours and Attendance.")
+else:
+    print("Accuracy remains the same with only two features.")
 
-# Most Important Feature:
-# PreviousScore (Score: 0.41)
-
-# Least Important Feature:
-# SleepHours (Score: 0.05)
+# Is the model still performing well?
+# Yes
