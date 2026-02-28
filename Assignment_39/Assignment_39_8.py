@@ -118,18 +118,30 @@ print(Border)
 print("Step 3 : Data Visualization")
 print(Border)
 
-# Scatter plot
+plt.figure(figsize=(8,6))
 
-plt.figure(figsize=(7, 5))
+# Separate data based on FinalResult
+for result in df["FinalResult"].unique():
+    temp = df[df["FinalResult"] == result]
+    
+    if result == 0:
+        label_name = "Fail (0)"
+        color = "red"
+    else:
+        label_name = "Pass (1)"
+        color = "green"
+    
+    plt.scatter(
+        temp["StudyHours"],
+        temp["PreviousScore"],
+        label=label_name,
+        color=color,
+        s=60
+    )
 
-for sp in df["species"].unique():
-    temp = df[df["species"] == sp]
-    plt.scatter(temp["petal length (cm)"], temp["petal width (cm)"], label= sp)
-
-plt.title("Iris : Petal length VS Petal Width")
-plt.xlabel("petal length (cm)")
-plt.ylabel("petal width (cm)")
-
+plt.title("Study Hours vs Previous Score")
+plt.xlabel("Study Hours")
+plt.ylabel("Previous Score")
 plt.legend()
 plt.grid(True)
 plt.show()
@@ -278,4 +290,5 @@ if train_accuracy > test_accuracy + 0.05:  # more than 5% gap
 elif test_accuracy > train_accuracy + 0.05:
     print("The model shows signs of underfitting: performs better on unseen data, may indicate training issues.")
 else:
+
     print("The model has balanced performance: no significant overfitting or underfitting detected.")
