@@ -1,0 +1,82 @@
+Dataset Description - Student Performance ML Dataset
+
+The dataset student_performance_ml.csv contains academic and behavioral information of students. 
+The objective of this dataset is to predict whether a student will Pass(1) or Fail(0) based on various input features.
+
+Each row in the dataset represents one student and each column represents a measurable factor that may influence academic performnance.
+
+Features Description:-
+    1) StudyHours - Number of hours a student studies per day.
+    2) Attendance - Percentage of class attendance.
+    3) PreviousScore - Marks obtained in the previous examination.
+    4) AssignmentsCompleted - Number of assignments completed by the student.
+    5) SleepHours - Average number of hours the student sleeps per day.
+    6) FinalResult - Target variable (Output):
+        A. 1 --> Pass
+        B. 0 --> Fail
+
+Objective of the Dataset
+The goal is to:
+    1) Analyze how different factors affect student performance.
+    2) Build a Machine Learning model to predict whether a student will pass or fail.
+    3) Understand concepts such as training, testing, accuracy, confusion matrix, overfitting and model evaluation.
+
+1. After training the decision tree Model, use:
+model.feature_importances_
+    1) Display importance score of each feature.
+    2) Which feature contributes the most in predicting FinalResult?
+    3) Which feature contributes the least?
+
+2. Remove the column SleepHours from the dataset.
+    1) Train the model again.
+    2) Compare new accuracy with previous accuracy.
+    3) Does removing this feature affect performance?
+
+3. Train the model using only:
+    1) StudyHours
+    2) Attendance
+
+Compare the accuracy with the full-feature model.
+Is the model still performing well?
+
+4. Create a new DataFrame with details of 5 new students.
+Use the trained model to predict their results.
+Displat predictions clearly.
+
+5. Without using accuracy_score, manually calculate accuracy:
+Verify whether it matches sklearn accuracy.
+
+6. Identify students where:
+Y_test != Y_pred
+    1) Display those rows.
+    2) How many students were misclassified?
+    3) What common pattern do you observe?
+
+7. Train model using:
+    1) random_state = 0
+    2) random_state = 10
+    3) random_state = 42
+
+Compare testing accuracy.
+Does the result change?
+
+8. Decision Tree Visualization
+Use:
+from sklearn.tree import plot_tree
+Visualize the trained decision tree.
+    1) Which feature appears at the root node?
+    2) Why do you think that feature was selected first?
+
+9. Create a new column:
+PerformanceIndex = (StudyHours * 2) + Attendance
+
+Train the model including this new feature.
+Does accuracy improve?
+
+10. Train the model with:
+    1) max_depth = None
+
+Calculate:
+    1) Training accuracy
+    2) Testing accuracy
+If the training accuracy is 100% but testing is lower, explain why this happens.
