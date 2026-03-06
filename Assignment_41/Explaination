@@ -1,0 +1,9 @@
+When I am giving K = 1, the predicted output is correct as Red
+
+When I am giving K = 3, the predicted output is correct as Red
+
+But K = 5 is an invalid value, as the K value should not be greater than the dataset lengh,
+it should be less than or equal to the dataset(Number of rows/samples)
+
+In our case, we have 4 samples that's why there is a tie, as we have 2 Red and 2 Blue samples.
+So due to the tie it took the 1st entry from the dataset, which is Red 
