@@ -1,0 +1,41 @@
+There is one dataset of wine which classify the wines according to its contents into three classes.
+
+Consider Wine dataset from the directory
+
+These data are the results of a chemical analysis of wines grown in the same region in italy but derived
+from three different cultivars. The analysis determined the quantities of 13 constituents found in each 
+of the three types of wines.
+
+Wine dataset contains 13 features analysis
+1) Alcohol
+2) Malic acid
+3) Ash
+4) Alcalinity of Ash
+5) Magnesium
+6) Total phenols
+7) Flavanoids
+8) Nonflavanoid phenols
+9) Proanthocyanins
+10) Color intensity
+11) Hue
+12) OD280/OD315 of diluted wines
+13) Proline
+
+According to the above features wine can be classified as
+1) Class 1
+2) Class 2
+3) Class 3
+
+We have to design Machine Learning application which uses Classification technique.
+
+Design machine learning application which follows below steps :
+
+Step 1 : Get Data
+
+Step 2 : Clean, Prepare and Manipulate data
+
+Step 3 : Train Data
+
+Step 4 : Test Data
+
+Step 5 : Calculate Accuracy
