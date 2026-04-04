@@ -1,0 +1,33 @@
+Cluster students into different academic performance groups based on features like:
+    Final grades
+    Study time
+    Failures
+    Absences
+
+This helps identify:
+    Top Performers
+    Average Students
+    Struggling Students
+
+Dataset Details :
+    Dataset Name : Student Performance Data Set
+
+Selected Features:
+Use these numerical features for clustering:
+    G1, G2, G3 --> First, second, final grades
+    studytime --> Weekly study hours
+    failures --> Number of past class failures
+    absences --> Number of school absences
+
+You should create below clusters as:
+    Top Performers (Cluster 0):
+        High grades and low failure count.
+        High study time and few absences.
+
+    Average Students (Cluster 1):
+        Moderate scores and study time.
+        Some failures or absences.
+
+    Struggling Students (Cluster 2):
+        Low grades, high failure and absence rate.
+        Low study time.

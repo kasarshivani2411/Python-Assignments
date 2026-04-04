@@ -1,0 +1,50 @@
+Predict whether a new article is Fake or Real using text Classification techniques. This assignment
+demonstrates the power of ensembel learning using a Voting Classifier with models like Logistic Regression,
+Decision Tree.
+
+Dataset Information:
+Dataset Name: Fake News Dataset
+Columns include:
+    title - Title of the news article
+    text - Main content of the article
+    label - 0 = Fake, 1 = Real
+
+Part 1. Data Preprocessing:
+    Load the dataset using Pandas.
+    Drop null values and select useful columns (title or text).
+    Convert the target variable(label) to binary(0 or 1).
+
+Part 2. Feature Extraction:
+    Use TF-IDF Vectorization to convert text into numerical features.
+
+Part 3. Model Training:
+    Train individual models:
+        Logistic Regression
+        Decision Tree Classifier
+    
+    Combine them Using:
+        Hard Voting(majority rule)
+        Soft Voting(average predicted probabilities)
+
+Part 4. Evaluation:
+    Compare accuracies of all models
+    Display confusion matrices
+    Soft vs hard Voting
+
+Note : Dataset is divided into 2 parts as fake.csv anf true.csv
+
+1. Load both CSV files
+Each CSV represents a class:
+    fake.csv contains fake news articles
+    true.csv contains real news articles
+
+2. Add a 'lebel' column to both:
+We need to combine the two datasets, so we must label them first:
+    0 = Fake
+    1 = Real
+
+3. Combine the datasets:
+    Now concatenate them into one DataFrame
+
+4. Use only the relevant columns:
+    You may use either title.text or both combined.
