@@ -1,0 +1,36 @@
+Consider below dataset:
+Diabetes
+
+Objective:
+Build a Machine Learning model to predict whether a patient is diabetic(1) or not(0) based on a medical attributes.
+
+Task Instructions:
+You must complete the following steps
+
+1. Exploratory Data Analysis (EDA):
+    Load thhe dataset using Pandas.
+    Display the first 5 rows.
+    Show column info and check for null values.
+    Display basic statistics using .describe().
+    Plot the distribution of the target variable(Outcome).
+    Use graphs like hist, boxplot or pairplot to identify patterns or outliers.
+
+2. Data Preprocessing:
+    Check and handle missing or zero values in columns like Glucose, BloodPressure, etc.
+    Apply feature scaling using StandardScaler or MinMaxScaler.
+    Split the dataset into features(X) and target(Y).
+
+3. Model Building:
+Train at least 2 different algorithms on the dataset:
+    Logistic Regression
+    K-Nearest Neighbors(KNN)
+    Decision Tree
+    Use train_test_split to divide the data
+
+4. Model Evaluation:
+    Print accuracy score, confusion matrix, precision, recall and F1 score.
+    Use matplotlib or seaborn to visualize confusion matrix.
+
+5. Final Output:
+    Predict whether a patient is diabetic based on test data.
+    Display prediction on screen and save them in a CSV file.
